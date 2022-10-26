@@ -13,7 +13,10 @@
 					<div class="ui stackable grid">
 						<!--左侧-->
 						<div class="three wide column m-mobile-hide">
-							<Introduction :class="{'m-display-none':focusMode}"/>
+              <RandomBlog :randomBlogList="randomBlogList" :class="{'m-display-none':focusMode}"/>
+              <Tags :tagList="tagList" :class="{'m-display-none':focusMode}"/>
+              <!--只在文章页面显示目录-->
+              <Tocbot v-if="$route.name==='blog'"/>
 						</div>
 						<!--中间-->
 						<div class="ten wide column">
@@ -23,10 +26,7 @@
 						</div>
 						<!--右侧-->
 						<div class="three wide column m-mobile-hide">
-							<RandomBlog :randomBlogList="randomBlogList" :class="{'m-display-none':focusMode}"/>
-							<Tags :tagList="tagList" :class="{'m-display-none':focusMode}"/>
-							<!--只在文章页面显示目录-->
-							<Tocbot v-if="$route.name==='blog'"/>
+              <Introduction :class="{'m-display-none':focusMode}"/>
 						</div>
 					</div>
 				</div>
