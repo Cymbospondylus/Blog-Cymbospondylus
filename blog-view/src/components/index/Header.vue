@@ -6,14 +6,14 @@
 			<div class="bg2" style="background-image: url('https://www.bzyl.site/static/bg2.jpg');"></div>
 			<div class="bg3" style="background-image: url('https://www.bzyl.site/static/bg3.jpg');" v-show="loaded"></div>
 		</div>
-		<div class="text-malfunction" data-word="Naccl's Blog">
+		<div class="text-malfunction" data-word="Hello World">
 			<div class="line"></div>
 		</div>
 		<div class="wrapper">
 			<i class="ali-iconfont icon-down" @click="scrollToMain"></i>
 		</div>
-		<div class="wave1" style="background: url('https://fastly.jsdelivr.net/gh/Naccl/blog-resource/img/wave1.png') repeat-x;"></div>
-		<div class="wave2" style="background: url('https://fastly.jsdelivr.net/gh/Naccl/blog-resource/img/wave2.png') repeat-x;"></div>
+		<div class="wave1" style="background: url('https://www.bzyl.site/static/wave1.png') repeat-x;"></div>
+		<div class="wave2" style="background: url('https://www.bzyl.site/static/wave2.png') repeat-x;"></div>
 	</header>
 </template>
 
